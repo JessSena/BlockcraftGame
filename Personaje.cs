@@ -8,12 +8,10 @@ namespace Blockcraft
 {
     public class Personaje
     {
-        private double energia;
         Arma arma;
 
-        public Personaje(double energia, Arma arma)
+        public Personaje(Arma arma)
         {
-            this.energia = energia;
             this.arma = arma;
         }
 

@@ -8,16 +8,14 @@ namespace Blockcraft
 {
     public class Arma
     {
-        private string nombre;
-        private double poder;
+        private int poder;
 
-        public Arma(string nombre, double poder)
+        public Arma(int poder)
         {
-            this.nombre = nombre;
             this.poder = poder;
         }
 
-        public double getPoder ()
+        public int getPoder ()
         {
             return this.poder;
         }

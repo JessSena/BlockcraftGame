@@ -8,27 +8,22 @@ namespace Blockcraft
 {
     public class Enemigo
     {
-        private double energiaActual;
-        private double energiaTotal;
+        private int energia;
 
-        public Enemigo(double energia)
+        public Enemigo(int energia)
         {
-            this.energiaTotal = energia;
+            this.energia = energia;
         }
 
         public double getEnergiaActual()
         {
-            return energiaActual;
+            return energia;
         }
 
-        public void recibirDaño(double daño)  
+        public void recibirDaño(int daño)  
         {
-            this.energiaActual -= (daño * energiaTotal);
+            this.energia -= daño ;
         }
 
-        public bool estaVivo()
-        {
-            return (energiaActual > 0);
-        }
     }
 }
